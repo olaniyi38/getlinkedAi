@@ -2,6 +2,8 @@ import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
 import ContactForm from "../components/ContactForm";
 import transition from "../utils/transition";
 import { motion } from "framer-motion";
+import Blur from "../components/Blur";
+import { PiStarFourFill } from "react-icons/pi";
 const Contact = () => {
 	return (
 		<motion.section
@@ -14,9 +16,16 @@ const Contact = () => {
 				initial={{ y: 20, opacity: 0 }}
 				whileInView={{ y: 0, opacity: 1 }}
 				transition={{ delay: 0.5, duration: 0.4 }}
-				className="max-w-3xl  xl:max-w-5xl md:flex  sm:px-16 md:px-0   mx-auto"
+				className="relative z-[4] max-w-3xl xl:max-w-5xl md:flex px-4 sm:px-16 md:px-0  mx-auto"
 			>
-				<div className=" space-y-6 order-2 mb-6 flex-1">
+				<Blur extraStyling="top-4 lg:-left-[20rem]" />
+				<Blur extraStyling="top-4 lg:bottom-0 lg:top-auto lg:-right-[23rem]  hidden lg:block" />
+
+				<PiStarFourFill className=" absolute w-3 h-3 lg:w-6 lg:h-6   fill-lightPurple bottom-0"/>
+				<PiStarFourFill className=" absolute w-3 h-3 lg:w-6 lg:h-6 right-0 top-16"/>
+				<PiStarFourFill className=" absolute w-3 h-3 right-4 top-[50%] fill-gray-600"/>
+				<PiStarFourFill className=" absolute w-3 h-3 fill-lightPurple -top-4 -left-0"/>
+				<div className=" relative z-[5] space-y-6 order-2 mb-6 flex-1">
 					<h1 className=" text-pink">
 						Questions or need assistance? Let us know about it
 					</h1>

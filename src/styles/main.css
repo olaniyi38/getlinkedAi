@@ -51,15 +51,15 @@
     }
 
     .fade-in {
-        opacity: 1;
+        /* opacity: 1; */
         transition: all .4s .5s;
         transform: translateY(0px);
     }
 
     .fade-out {
-        opacity: 0;
+      
         transition: all .4s;
-        transform: translateY(-4px);
+        transform: translateY(50px);
     }
 
     .timeline {

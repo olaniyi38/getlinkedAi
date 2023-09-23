@@ -9,6 +9,8 @@ import { ReactComponent as ManSvg } from "../assets/svgs/man.svg";
 import { ReactComponent as WomanSvg } from "../assets/svgs/woman.svg";
 import transition from "../utils/transition";
 import { motion } from "framer-motion";
+import Blur from "../components/Blur";
+import { PiStarFourFill } from "react-icons/pi";
 
 const Register = () => {
 	const [isModalActive, setModalActive] = useState(false);
@@ -19,14 +21,17 @@ const Register = () => {
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				exit={{ opacity: 0 }}
-				className="sm:py-4 lg:py-8 xl:py-16 lg:flex"
+				className="sm:py-4 lg:py-8 xl:py-16 lg:flex relative"
 			>
+				<Blur extraStyling="top-16 left-16"/>
+				<Blur extraStyling="hidden md:block bottom-0 -right-[10rem]" />
+				<PiStarFourFill  className=" absolute right-8 z-10 lg:w-6 lg:h-6 top-8 fill-lightPurple"/>
 				<motion.img
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}
 					transition={{ delay: 0.5, duration: 0.4 }}
 					src={img1}
-					className="hidden flex-1 max-w-[12rem] sm:max-w-[20rem]  lg:max-w-[25rem] xl:max-w-[35rem] lg:block top-0 bottom-0 my-auto left-0 xl:left-12 "
+					className="z-[6] hidden flex-1 max-w-[12rem] sm:max-w-[20rem]  lg:max-w-[25rem] xl:max-w-[35rem] lg:block top-0 bottom-0 my-auto left-0 xl:left-12 "
 					alt="man-sitting illustration"
 				/>
 				<motion.div
@@ -61,7 +66,7 @@ const Register = () => {
 						</p>
 					</div>
 
-					<div className=" space-y-6 pt-4">
+					<div className="relative shadow-xl  z-[2] space-y-6 pt-4">
 						<h3 className="font-semibold uppercase text-lg">
 							create your account
 						</h3>

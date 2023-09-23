@@ -3,6 +3,7 @@ import FormInput from "./FormInput";
 import { useForm } from "react-hook-form";
 import Button from "./Button";
 import { Form } from "react-router-dom";
+import { PiStarFourFill } from "react-icons/pi";
 
 const RegisterForm = ({ toggleModal }) => {
 	const { register, formState, handleSubmit } = useForm({
@@ -18,7 +19,9 @@ const RegisterForm = ({ toggleModal }) => {
 	}
 
 	return (
-		<form className="space-y-5" onSubmit={handleSubmit(onSubmit)}>
+		<form className="space-y-5"  onSubmit={handleSubmit(onSubmit)}>
+			<PiStarFourFill className=" absolute fill-gray-600 -top-2 right-8"/>
+			<PiStarFourFill className=" absolute top-[50%] -left-8"/>
 			<div className="lg:grid grid-cols-2 items-center gap-x-8 gap-y-8 space-y-5 lg:space-y-0 ">
 				<FormInput>
 					<FormInput.Label>Team's Name</FormInput.Label>
