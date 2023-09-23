@@ -63,6 +63,7 @@ const Attributes = () => {
 					<PiStarFourFill className=" absolute bottom-0 right-0 md:w-6 md:h-6 md:right-auto  md:-left-16" />
 					{attributes.map((a) => (
 						<motion.div
+							key={a.title}
 							initial={{ opacity: 0, y: 20 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							transition={{ delay: 0.4, duration: 0.3 }}

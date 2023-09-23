@@ -78,7 +78,7 @@ const Policy = () => {
 
 							<div className="space-y-6 my-6">
 								{terms.map((t) => (
-									<div className="flex items-start gap-x-3 md:pr-16">
+									<div key={t} className="flex items-start gap-x-3 md:pr-16">
 										<HiCheckCircle className="flex-none fill-green-500 w-6 h-6" />
 										<p className="flex-1">{t}</p>
 									</div>

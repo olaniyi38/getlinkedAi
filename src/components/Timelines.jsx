@@ -58,7 +58,7 @@ const Timelines = () => {
 				<PiStarFourFill className=" absolute left-24 top-[50%] lg:w-6 lg:h-6 fill-gray-600" />
 				<PiStarFourFill className=" absolute -bottom-4 -left-4 lg:w-6 lg:h-6 fill-gray-700 w-3 h-3" />
 				{timelines.map((t, i) => (
-					<Timeline data={t} index={i} />
+					<Timeline key={t.title} data={t} index={i} />
 				))}
 			</div>
 		</section>

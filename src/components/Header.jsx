@@ -45,7 +45,7 @@ const Header = () => {
 
 				<nav className="hidden md:block space-x-6 lg:space-x-10 font-semibold">
 					{Links.map(({ name, url }) => (
-						<a href={url} className="capitalize">
+						<a key={name} href={url} className="capitalize">
 							{name}
 						</a>
 					))}

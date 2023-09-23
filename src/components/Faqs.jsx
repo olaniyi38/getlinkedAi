@@ -58,7 +58,7 @@ const Faqs = () => {
 				</div>
 				<div className="max-w-[30rem] font-medium space-y-4  mt-6 md:mt-10 lg:mt-16  mx-auto lg:mx-0">
 					{faqs.map(({ title, content }) => (
-						<Accordion title={title} content={content} />
+						<Accordion key={title} title={title} content={content} />
 					))}
 				</div>
 			</motion.div>

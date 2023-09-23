@@ -39,6 +39,7 @@ const MobileNav = ({ active, closeFunc }) => {
 			<div className=" flex flex-col gap-y-4 text-xl  mt-20 mb-8">
 				{Links.map(({ url, name }, i) => (
 					<Link
+					key={name}
 						to={url}
 						onClick={closeFunc}
 						className={`${

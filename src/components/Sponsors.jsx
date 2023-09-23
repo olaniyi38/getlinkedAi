@@ -1,14 +1,11 @@
 import { motion } from "framer-motion";
 import { ReactComponent as Sponsor1 } from "../assets/svgs/sponsor1.svg";
 import { ReactComponent as Sponsor2 } from "../assets/svgs/sponsor2.svg";
-import { ReactComponent as Sponsor3 } from "../assets/svgs/sponsor3.svg";
-import { ReactComponent as Sponsor5 } from "../assets/svgs/sponsor5.svg";
-import { ReactComponent as Sponsor6 } from "../assets/svgs/sponsor6.svg";
+
 
 import Blur from "./Blur";
 import { PiStarFourFill } from "react-icons/pi";
 
-const sponsorSvgs = [Sponsor1, Sponsor2, Sponsor3, Sponsor5, Sponsor6];
 
 const Sponsors = () => {
 	return (

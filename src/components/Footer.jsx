@@ -57,7 +57,7 @@ const Footer = () => {
 					<h3 className=" text-pink mb-2">Useful links</h3>
 					<div className="flex flex-col gap-y-2 text-[.9rem] capitalize">
 						{usefulLinks.map(({ url, name }) => (
-							<a href={url}>{name}</a>
+							<a key={name} href={url}>{name}</a>
 						))}
 					</div>
 					<div className="flex flex-1 items-center gap-x-3 mt-2">
