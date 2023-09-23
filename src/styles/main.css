@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    section {
+        @apply px-4 py-8 xs:px-6 md:px-10 md:py-12 lg:px-16 xl:px-24 lg:py-16 border-t border-lightPurple/50 overflow-hidden;
+    }
+
+    body {
+        @apply bg-darkPurple text-white overflow-x-hidden font-montserrat;
+
+    }
+
+    html {
+        scroll-behavior: smooth
+    }
+
+    img {
+        @apply mx-auto object-cover;
+    }
+    h1,
+    h2 {
+        font-family: clash, "sans-serif";
+    }
+
+    h1 {
+        @apply text-xl xs:text-2xl lg:text-3xl;
+    }
+
+    span {
+        display: inline-block;
+    }
+
+    h2 {
+        @apply text-xl
+    }
+}
+
+
+
+@layer utilities {
+    .clip-open {
+        transition: clip-path .6s .3s cubic-bezier(0.19, 1, 0.22, 1);
+        clip-path: circle(100% at 100% 50%);
+    }
+
+    .clip-close {
+        transition: clip-path .6s .5s cubic-bezier(0.19, 1, 0.22, 1);
+        clip-path: circle(0% at 0% 0%);
+    }
+
+    .fade-in {
+        opacity: 1;
+        transition: all .4s .5s;
+        transform: translateY(0px);
+    }
+
+    .fade-out {
+        opacity: 0;
+        transition: all .4s;
+        transform: translateY(-4px);
+    }
+
+    .timeline {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: .4rem;
+        min-height: 12rem;
+
+    }
+
+    .timeline:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .hover-underline {
+        position: relative;
+
+    }
+
+    .hover-underline::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        @apply bg-pink;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .6s .3s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .hover-underline:hover::before {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+
+    .mirror {
+        transform: rotateY(180deg);
+        display: inline-block;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .timeline {
+        display: flex;
+        gap: 0rem 4rem;
+
+    }
+}
+
+@font-face {
+    font-family: "clash";
+    src: url('../assets/fonts/clash-display/ClashDisplay-Bold.ttf');
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf");
+}
