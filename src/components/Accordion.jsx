@@ -8,12 +8,18 @@ const Accordion = ({ title, content }) => {
 		setIsActive(!isActive);
 	}
 
-	
 	return (
-		<motion.div layout onClick={toggle} className="cursor=pointer  overflow-hidden text-[.9rem] sm:text-base border-b border-b-lightPurple space-y-2">
+		<motion.div
+			layout
+			onClick={toggle}
+			className="cursor=pointer  overflow-hidden text-[.9rem] sm:text-base border-b border-b-lightPurple space-y-2"
+		>
 			<div className=" flex items-start justify-between">
 				<span className=" pr-4">{title}</span>
-				<button onClick={toggle}>
+				<button
+					className={` transition-all ${isActive ? " rotate-45" : ""}`}
+					onClick={toggle}
+				>
 					<HiOutlinePlus className="w-4 h-4 stroke-pink" />
 				</button>
 			</div>

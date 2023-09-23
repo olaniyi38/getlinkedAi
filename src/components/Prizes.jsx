@@ -1,7 +1,7 @@
 import goldImg from "../assets/imgs/gold-medal.png";
 import silverImg from "../assets/imgs/silver-medal.png";
 import bronzeImg from "../assets/imgs/bronze-medal.png";
-import { motion } from "framer-motion";
+
 
 const Prizes = () => {
 	return (
