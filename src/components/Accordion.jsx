@@ -9,10 +9,10 @@ const Accordion = ({ title, content }) => {
 	}
 
 	return (
-		<motion.div
-			layout
+		<div
+			
 			onClick={toggle}
-			className="cursor=pointer  overflow-hidden text-[.9rem] sm:text-base border-b border-b-lightPurple space-y-2"
+			className="cursor-pointer  overflow-hidden text-[.9rem] sm:text-base border-b border-b-lightPurple space-y-2"
 		>
 			<div className=" flex items-start justify-between">
 				<span className=" pr-4">{title}</span>
@@ -30,7 +30,7 @@ const Accordion = ({ title, content }) => {
 			>
 				<p>{content}</p>
 			</div>
-		</motion.div>
+		</div>
 	);
 };
 

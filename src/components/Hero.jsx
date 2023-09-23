@@ -78,14 +78,14 @@ const Hero = () => {
 				</div>
 			</div>
 
-			<div className="anim-4 flex justify-center lg:justify-normal gap-x-4 mt-4 md:mt-8 lg:mt-20">
-				<p className="text-4xl">
+			<div className="anim-4 flex font-mono justify-center lg:justify-normal gap-x-4 mt-8  lg:mt-20">
+				<p className="text-4xl lg:text-5xl">
 					00<span className="text-base">h</span>
 				</p>
-				<p className="text-4xl">
+				<p className="text-4xl lg:text-5xl">
 					00<span className="text-base">m</span>
 				</p>
-				<p className="text-4xl">
+				<p className="text-4xl lg:text-5xl">
 					00<span className="text-base">s</span>
 				</p>
 			</div>
