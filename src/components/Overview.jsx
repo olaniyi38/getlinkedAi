@@ -1,5 +1,5 @@
 import { PiStarFourFill } from "react-icons/pi";
-import img1 from "../assets/imgs/idea.png";
+import img1 from "../assets/imgs/idea.webp";
 import { motion } from "framer-motion";
 
 const Overview = () => {

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import awardImg from "../assets/imgs/award.png";
+import awardImg from "../assets/imgs/award.webp";
 import Blur from "./Blur";
 import Prizes from "./Prizes";
 import { PiStarFourFill } from "react-icons/pi";

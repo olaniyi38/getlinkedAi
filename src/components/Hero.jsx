@@ -3,13 +3,13 @@ import Button from "./Button";
 import Blur from "./Blur";
 
 import { PiStarFourFill } from "react-icons/pi";
-import bulbImg from "../assets/imgs/bulb.png";
+import bulbImg from "../assets/imgs/bulb.webp";
 import { ReactComponent as BendyLineSvg } from "../assets/svgs/bendy-line.svg";
-import chainImg from "../assets/imgs/chain.png";
-import blastImg from "../assets/imgs/blast.png";
+import chainImg from "../assets/imgs/chain.webp";
+import blastImg from "../assets/imgs/blast.webp";
 
-import img1 from "../assets/imgs/boy-on-glasses.png";
-import img2 from "../assets/imgs/glow.png";
+import img1 from "../assets/imgs/boy-on-glasses.webp";
+import img2 from "../assets/imgs/glow.webp";
 
 import gsap from "gsap";
 

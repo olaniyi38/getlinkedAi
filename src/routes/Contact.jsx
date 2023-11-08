@@ -4,6 +4,7 @@ import transition from "../utils/transition";
 import { motion } from "framer-motion";
 import Blur from "../components/Blur";
 import { PiStarFourFill } from "react-icons/pi";
+
 const Contact = () => {
 	return (
 		<motion.section

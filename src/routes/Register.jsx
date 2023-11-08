@@ -1,6 +1,6 @@
-import img1 from "../assets/imgs/man-sitting.png";
-import img2 from "../assets/imgs/check-circle.png";
-import img3 from "../assets/imgs/winner.png";
+import img1 from "../assets/imgs/man-sitting.webp";
+import img2 from "../assets/imgs/check-circle.webp";
+import img3 from "../assets/imgs/winner.webp";
 import RegisterForm from "../components/RegisterForm";
 import Button from "../components/Button";
 import { useState } from "react";

@@ -1,6 +1,6 @@
-import goldImg from "../assets/imgs/gold-medal.png";
-import silverImg from "../assets/imgs/silver-medal.png";
-import bronzeImg from "../assets/imgs/bronze-medal.png";
+import goldImg from "../assets/imgs/gold-medal.webp";
+import silverImg from "../assets/imgs/silver-medal.webp";
+import bronzeImg from "../assets/imgs/bronze-medal.webp";
 
 
 const Prizes = () => {

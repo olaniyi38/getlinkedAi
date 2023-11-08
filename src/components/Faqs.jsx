@@ -1,6 +1,6 @@
 import React from "react";
 import Accordion from "./Accordion";
-import img1 from "../assets/imgs/thought.png";
+import img1 from "../assets/imgs/thought.webp";
 import { ReactComponent as QuestionSvg } from "../assets/svgs/question.svg";
 import { PiStarFourFill } from "react-icons/pi";
 import { motion } from "framer-motion";

@@ -1,5 +1,5 @@
 import { PiStarFourFill } from "react-icons/pi";
-import img1 from "../assets/imgs/criteria.png";
+import img1 from "../assets/imgs/criteria.webp";
 import Blur from "./Blur";
 import Button from "./Button";
 import { motion } from "framer-motion";
