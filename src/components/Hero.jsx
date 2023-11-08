@@ -34,7 +34,7 @@ const Hero = () => {
 				.from(".anim-3", { ease: "back.out(1.7)" }, "-=.5")
 				.from(".anim-4", { y: 20 }, "-=.3")
 				.from(".anim-5", { x: 50 }, "-=.3")
-				.from(".anim-6", { duration: 1 },"-=.4");
+				.from(".anim-6", { duration: 1 }, "-=.4");
 		}, scopeRef);
 		return () => ctx.revert();
 	}, []);
@@ -95,11 +95,13 @@ const Hero = () => {
 					src={img1}
 					className=" col-start-1 col-end-1 row-start-1 row-end-1"
 					alt="boy-on-glasses"
+					loading="eager"
 				/>
 				<img
 					src={img2}
 					className="col-start-1 col-end-1 row-start-1 row-end-1 relative right-4 bottom-4"
 					alt="glow"
+					loading="eager"
 				/>
 			</div>
 		</section>
